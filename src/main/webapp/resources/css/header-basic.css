@@ -1,0 +1,45 @@
+#main_nav {
+	width: 800px;
+	height: 0px;
+	margin: 100px auto 0 auto;
+}
+
+#main_nav ul {
+	
+}
+
+#main_nav ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#main_nav ul li {
+	float: left;
+}
+
+#main_nav >nav>ul {
+	
+}
+
+#main_nav>nav>ul>li {
+	position: relative;
+	width: 200px;
+}
+
+#main_nav>nav>ul>li>a {
+	display: block;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color:red;
+	color: #000;
+}
+
+#main_nav>nav>ul>li.on>a {
+	font-weight: bold;
+	text-decoration: underline;
+	background-color:blue;
+	color: #000;
+}
