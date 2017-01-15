@@ -6,19 +6,23 @@
 	href="${pageContext.request.contextPath}/resources/css/basic.css">
 
 <style>
-header {
+
+#header {
 	box-shadow: 0px 2px 2px #ccc;
+	width: 100%;
+	height: 100px;
 }
 
-header>#top {
-	margin: 0 auto;
-	width: 600px;
+#header:after {
+	display: block;
+	clear: both;
 }
 
-header>#top>#logo {
+#header #logo {
+	float: left;
 	width: 200px;
 	height: auto;
-	margin: 20px auto 20px auto;
+	margin: 30px auto 20px 5%;
 }
 
 img {
@@ -26,28 +30,25 @@ img {
 	height: auto;
 }
 
-nav ul:after {
-	content: "";
+ul {
 	display: block;
-	clear: both;
+	float:right;
+	margin-right : 30px;
 }
 
-nav>ul>li {
+ul li {
 	float: left;
-	position: relative;
-	width: 200px;
+	position: realative;
+	padding: 70px 0px 0px 60px;
 }
 
-nav>ul>li>a {
+ul li a {
 	display: block;
-	width: 200px;
-	height: 30px;
-	line-height: 30px;
 	text-align: center;
 	color: #aaa;
 }
 
-nav>ul>li.on>a {
+ul>li.on>a {
 	color: #000;
 }
 </style>
@@ -59,24 +60,25 @@ nav>ul>li.on>a {
 	
 }
 
-#content>#main {	
+#content>#main {
 	line-height: 120%;
-	margin: 10% auto 10% auto;
+	margin: 20% auto 20% auto;
 	color: #000;
 	text-align: center;
+	transform: rotate(345deg);
 	animation-duration: 3s;
 	animation-name: slidein;
 	animation-iteration-count: infinite;
 }
 
-@keyframes slidein {
-	from { 
-		font-size: 50px;	
-	}
+@
+keyframes slidein {from { font-size:50px;
 	
-	to {
-		font-size: 100px;
-	}
+}
+
+to {
+	font-size: 100px;
+}
 }
 </style>
 
@@ -108,21 +110,21 @@ footer {
 </head>
 <body>
 
-	<header>
-		<div id='top'>
-			<div id='logo'>
-				<img src="${pageContext.request.contextPath}/resources/img/logo.png">
-			</div>
+	<div id="header">
 
-			<nav>
-				<ul>
-					<li><a href="#">Who?</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contacts</a></li>
-				</ul>
-			</nav>
+		<div id='logo'>
+			<img src="${pageContext.request.contextPath}/resources/img/logo.png">
 		</div>
-	</header>
+
+
+		<ul>
+			<li><a href="#">Who?</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+
+
+	</div>
 
 	<div id="content">
 		<div id="main">who are G?</div>

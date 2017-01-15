@@ -15,7 +15,7 @@
 }
 
 #main_nav ul li {
-	float: left;
+	float: right;
 }
 
 #main_nav >nav>ul {
@@ -24,12 +24,12 @@
 
 #main_nav>nav>ul>li {
 	position: relative;
-	width: 200px;
+	width: 100px;
 }
 
 #main_nav>nav>ul>li>a {
 	display: block;
-	width: 200px;
+	width: 100px;
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
